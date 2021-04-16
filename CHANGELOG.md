@@ -1,3 +1,8 @@
-## [0.0.1] - TODO: Add release date.
+## [0.1.1] - Clarify doc
 
-* TODO: Describe initial release.
+* Add description
+* Add homepage
+
+## [0.0.1] - Add release date.
+
+* Describe initial release.
