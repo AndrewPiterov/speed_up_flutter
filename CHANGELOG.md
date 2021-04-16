@@ -1,5 +1,9 @@
 ## [0.1.1] - Clarify doc
 
+* Refactor Section
+
+## [0.1.1] - Clarify doc
+
 * Add description
 * Add homepage
 
