@@ -13,8 +13,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        //
-
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
@@ -47,11 +45,14 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title!),
       ),
       body: Container(
-        child: Section([
-          Text('Name Andrew'),
-          100.h,
-          Text('Age 18'),
-        ]),
+        child: Section(
+          [
+            Text('Name Andrew'),
+            100.h,
+            Text('Age 18'),
+          ],
+          heading: Text('User info'),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,

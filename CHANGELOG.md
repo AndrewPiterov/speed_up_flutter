@@ -1,4 +1,6 @@
-## [0.1.1] - Clarify doc
+## [0.3.1] - Add speed_up dependency
+
+## [0.2.1] - Clarify doc
 
 * Refactor Section
 

@@ -4,7 +4,17 @@ import './extensions.dart';
 /// Collect related widgets to a section
 /// A section is a thematic grouping of content, typically with a heading
 ///
-///
+/// Usage:
+/// ```dart
+/// Section(
+///   [
+///     Text('Name Andrew'),
+///     10.h,
+///     Text('Age 18'),
+///   ],
+///   heading: Text('User info'),
+/// )
+/// ```
 class Section extends StatelessWidget {
   const Section(
     this.children, {

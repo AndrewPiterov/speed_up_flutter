@@ -100,13 +100,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
+  speed_up:
+    dependency: transitive
+    description:
+      name: speed_up
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.1"
   speed_up_flutter:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.2.1"
+    version: "0.3.1"
   stack_trace:
     dependency: transitive
     description:
