@@ -1,5 +1,8 @@
 library speed_up_flutter;
 
+export './src/extensions.dart';
+export './src/section.dart';
+
 /// A Calculator.
 class Calculator {
   /// Returns [value] plus 1.
