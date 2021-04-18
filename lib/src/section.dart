@@ -42,13 +42,11 @@ class Section extends StatelessWidget {
 
     items.addAll(children);
 
-    return SafeArea(
-      child: Padding(
-        padding: padding,
-        child: Column(
-          crossAxisAlignment: alignment,
-          children: items,
-        ),
+    return Padding(
+      padding: padding,
+      child: Column(
+        crossAxisAlignment: alignment,
+        children: items,
       ),
     );
   }

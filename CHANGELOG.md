@@ -1,3 +1,10 @@
+# Changelog
+
+## [0.3.2] - Fix Section
+
+* Rid of SafeArea
+* Update speed_up dependency
+
 ## [0.3.1] - Add speed_up dependency
 
 ## [0.2.1] - Clarify doc
