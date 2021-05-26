@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.4.2] - Fix Section
+
+* Add `getTextSize` method
+
 ## [0.3.2] - Fix Section
 
 * Rid of SafeArea
@@ -16,6 +20,6 @@
 * Add description
 * Add homepage
 
-## [0.0.1] - Add release date.
+## [0.0.1] - Add release date
 
 * Describe initial release.

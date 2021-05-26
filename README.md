@@ -26,6 +26,17 @@ Section(
 )
 ```
 
+### getTextSize
+
+Useful when need calculate AppBar's `height`
+
+```dart
+final Size textSize = getTextSize(
+  'Discover Fantasian\'s\namazing world',
+  headerTextStyle,
+);
+```
+
 ## Contributing
 
 We accept the following contributions:

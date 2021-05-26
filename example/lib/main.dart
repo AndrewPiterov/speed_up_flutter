@@ -8,8 +8,6 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    debugPrint(Calculator.addOne(1).toString());
-
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
