@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.4.3] - Update dependencies
+
+* `speed_up: ^0.4.0`
+
 ## [0.4.2] - Fix Section
 
 * Add `getTextSize` method
