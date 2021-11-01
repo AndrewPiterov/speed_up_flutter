@@ -1,4 +1,4 @@
-# SpeedUp Flutter
+# speed_up_flutter
 
 This package will speed up your developing.
 
@@ -47,4 +47,4 @@ We accept the following contributions:
 
 ## Maintainers
 
-* [Andrew Piterov](mailto:piterov1990@gmail.com?subject=[GitHub]%20Source%20Dart%20fluent_result)
+* [Andrew Piterov](mailto:piterov1990@gmail.com?subject=[GitHub]%20Source%20Dart%20speed_up_flutter)

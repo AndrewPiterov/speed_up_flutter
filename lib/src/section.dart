@@ -50,4 +50,18 @@ class Section extends StatelessWidget {
       ),
     );
   }
+
+  factory Section.noPad(
+    List<Widget> children, {
+    CrossAxisAlignment alignment = CrossAxisAlignment.start,
+    Widget? heading,
+    num headingBottomPadding = 20,
+  }) {
+    return Section(
+      children,
+      padding: const EdgeInsets.all(0),
+      heading: heading,
+      headingBottomPadding: headingBottomPadding,
+    );
+  }
 }

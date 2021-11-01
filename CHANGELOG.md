@@ -1,4 +1,7 @@
-# Changelog
+## 0.5.5
+
+* [Add] `Section.noPad`
+* Update dependencies `speed_up: ^0.5.5`
 
 ## [0.4.3] - Update dependencies
 
