@@ -1,3 +1,9 @@
+## 0.6.6
+
+* [Add] `String.asText(:withStyle)`
+* [Add] `Widget.inCenter()`
+* Update dependencies `speed_up: ^0.6.6`
+
 ## 0.5.5
 
 * [Add] `Section.noPad`

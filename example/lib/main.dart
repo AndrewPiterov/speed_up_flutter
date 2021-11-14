@@ -45,11 +45,11 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         child: Section(
           [
-            Text('Name Andrew'),
+            'Name Andrew'.asText(),
             100.h,
-            Text('Age 18'),
+            'Age 18'.asText().inCenter(),
           ],
-          heading: Text('User info'),
+          heading: 'User info'.asText(),
         ),
       ),
       floatingActionButton: FloatingActionButton(
