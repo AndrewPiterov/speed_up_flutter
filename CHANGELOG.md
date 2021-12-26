@@ -1,3 +1,8 @@
+## 0.6.7
+
+* [Add] `FirstLastItemInList` widget
+* [Add] `sidePadded`
+
 ## 0.6.6
 
 * [Add] `String.asText(:withStyle)`

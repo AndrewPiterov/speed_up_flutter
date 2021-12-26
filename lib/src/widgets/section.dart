@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './extensions.dart';
+import 'package:speed_up_flutter/speed_up_flutter.dart';
 
 /// Collect related widgets to a section
 /// A section is a thematic grouping of content, typically with a heading
