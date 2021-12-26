@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:speed_up_flutter/speed_up_flutter.dart';
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, this.title}) : super(key: key);
+  const MyHomePage({Key? key, this.title}) : super(key: key);
 
   final String? title;
 
@@ -24,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 builder: (_) => const ContactListPage(),
               ),
             ),
-            icon: Icon(Icons.people),
+            icon: const Icon(Icons.people),
           )
         ],
       ),

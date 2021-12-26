@@ -62,6 +62,7 @@ class Section extends StatelessWidget {
       padding: const EdgeInsets.all(0),
       heading: heading,
       headingBottomPadding: headingBottomPadding,
+      alignment: alignment,
     );
   }
 }

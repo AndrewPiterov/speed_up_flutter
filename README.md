@@ -1,6 +1,12 @@
 # speed_up_flutter
 
-This package will speed up your developing.
+[![pub package](https://img.shields.io/pub/v/speed_up_flutter.svg?label=speed_up_flutter&color=blue)](https://pub.dev/packages/speed_up_flutter)
+[![likes](https://badges.bar/speed_up_flutter/likes)](https://pub.dev/packages/speed_up_flutter/score)
+[![codecov](https://codecov.io/gh/AndrewPiterov/speed_up_flutter/branch/main/graph/badge.svg?token=VM9LTJXGQS)](https://codecov.io/gh/AndrewPiterov/speed_up_flutter)
+[![style: lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)](https://pub.dev/packages/lint)
+[![Dart](https://github.com/AndrewPiterov/speed_up_flutter/actions/workflows/dart.yml/badge.svg)](https://github.com/AndrewPiterov/speed_up_flutter/actions/workflows/dart.yml)
+
+Package to speed up your productivity in Flutter. For more productivity in pure `Dart`, please check out [speed_up](https://pub.dev/packages/speed_up) package.
 
 ## Usage
 

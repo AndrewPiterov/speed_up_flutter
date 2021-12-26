@@ -5,7 +5,7 @@ import 'package:speed_up_flutter/speed_up_flutter.dart';
 class ContactListPage extends StatelessWidget {
   const ContactListPage({Key? key}) : super(key: key);
 
-  final scrollDirection = Axis.vertical;
+  static const scrollDirection = Axis.vertical;
 
   @override
   Widget build(BuildContext context) {
@@ -39,11 +39,11 @@ class ContactListItemView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.blueAccent,
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       child: Row(
         children: [
           contact.name.asText(
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
             ),
           ),

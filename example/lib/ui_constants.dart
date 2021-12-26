@@ -1,5 +1,5 @@
-import 'package:speed_up_flutter/speed_up_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:speed_up_flutter/speed_up_flutter.dart';
 
 abstract class UI extends UIBaseConstants {
   static final bulletPoint = Container(
