@@ -1,3 +1,5 @@
+// ignore_for_file: public_member_api_docs
+
 import 'package:example/pages/contact_list_page.dart';
 import 'package:flutter/material.dart';
 import 'package:speed_up_flutter/speed_up_flutter.dart';

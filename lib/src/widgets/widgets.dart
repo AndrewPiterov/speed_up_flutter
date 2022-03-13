@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 export './first_last_item_in_list.dart';
+export './read_more_widget.dart';
 export './section.dart';
 
+///
 extension StringExtension on String {
+  ///
   Text asText({TextStyle? style}) {
     return Text(
       this,
@@ -12,12 +15,18 @@ extension StringExtension on String {
   }
 }
 
+///
 extension WidgetExtension on Widget {
+  ///
   Center inCenter() {
     return Center(child: this);
   }
 
-  Padding sidePadded({Axis axis = Axis.horizontal, double pad = 20}) {
+  ///
+  Padding sidePadded({
+    Axis axis = Axis.horizontal,
+    double pad = 20,
+  }) {
     return Padding(
       padding: EdgeInsets.symmetric(
         horizontal: axis == Axis.horizontal ? pad : 0,
