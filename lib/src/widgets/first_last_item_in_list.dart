@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+///
 class FirstLastItemInList extends StatelessWidget {
+  ///
   const FirstLastItemInList({
     required this.child,
     required this.index,
@@ -21,6 +23,11 @@ class FirstLastItemInList extends StatelessWidget {
   Widget build(BuildContext context) {
     final isFirst = index == 0;
     final isLast = index == total - 1;
+
+    if (!isFirst && !isLast) {
+      return child;
+    }
+
     return Padding(
       padding: EdgeInsets.only(
         left: scrollDirection == Axis.vertical

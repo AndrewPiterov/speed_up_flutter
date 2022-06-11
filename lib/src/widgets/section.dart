@@ -16,6 +16,7 @@ import 'package:speed_up_flutter/speed_up_flutter.dart';
 /// )
 /// ```
 class Section extends StatelessWidget {
+  ///
   const Section(
     this.children, {
     this.alignment = CrossAxisAlignment.start,
@@ -45,12 +46,14 @@ class Section extends StatelessWidget {
     return Padding(
       padding: padding,
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: alignment,
         children: items,
       ),
     );
   }
 
+  ///
   factory Section.noPad(
     List<Widget> children, {
     CrossAxisAlignment alignment = CrossAxisAlignment.start,
@@ -59,7 +62,7 @@ class Section extends StatelessWidget {
   }) {
     return Section(
       children,
-      padding: const EdgeInsets.all(0),
+      padding: EdgeInsets.zero,
       heading: heading,
       headingBottomPadding: headingBottomPadding,
       alignment: alignment,

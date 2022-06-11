@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 
+/// Get text size
 Size getTextSize(
   String text,
   TextStyle style, {

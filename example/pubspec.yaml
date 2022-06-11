@@ -24,7 +24,7 @@ dependencies:
   cupertino_icons: ^1.0.4
   flutter:
     sdk: flutter
-  speed_up: ^0.7.10
+  speed_up: ^0.8.0+1
   speed_up_flutter:
       path: ../
 
