@@ -1,3 +1,4 @@
+import 'package:example/pages/debounce_button.dart';
 import 'package:example/pages/read_more_page.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home:
-          const ReadMorePage(), // const MyHomePage(title: 'Flutter Demo Home Page'),
+          const DebounceButtonPage(), // const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
