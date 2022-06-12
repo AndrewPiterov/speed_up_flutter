@@ -6,14 +6,14 @@ import 'package:flutter/material.dart';
 class DebouncedButton extends StatefulWidget {
   ///
   const DebouncedButton({
-    required this.child,
+    required this.builder,
     required this.onTap,
     this.debounce = const Duration(milliseconds: 200),
     Key? key,
   }) : super(key: key);
 
   ///
-  final Widget child;
+  final Widget Function(bool isEnabled) builder;
 
   ///
   final VoidCallback onTap;
@@ -40,8 +40,9 @@ class _DebouncedButtonState extends State<DebouncedButton> {
     return ValueListenableBuilder<bool>(
       valueListenable: _isEnabled,
       builder: (context, isEnabled, child) => GestureDetector(
+        behavior: HitTestBehavior.translucent,
         onTap: isEnabled ? _onButtonPressed : null,
-        child: widget.child,
+        child: widget.builder(isEnabled),
       ),
     );
   }

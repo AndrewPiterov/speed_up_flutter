@@ -1,3 +1,8 @@
+## 0.8.1
+
+* [Add] Like Button
+* [Add] Debounced Button
+
 ## 0.8.0
 
 * Update dependencies
