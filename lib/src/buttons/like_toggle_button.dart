@@ -71,7 +71,7 @@ class LikeToggleButton extends StatefulWidget {
   final Widget Function(bool isLiked, int count) likeBuilder;
 
   ///
-  final Function(bool isLiked) onTap;
+  final Function(bool isLiked, int count) onTap;
 
   ///
   final int? initialCount;
@@ -119,7 +119,7 @@ class _LikeToggleButtonState extends State<LikeToggleButton> {
       }
 
       _isBusySubject.add(true);
-      await widget.onTap(state.action);
+      await widget.onTap(state.action, state.count);
       _lastProcessedActionSubject.add(state.action);
       _isBusySubject.add(false);
     });

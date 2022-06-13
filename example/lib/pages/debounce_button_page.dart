@@ -21,7 +21,7 @@ class DebounceButtonPage extends StatelessWidget {
         children: [
           Center(
             child: LikeToggleButton(
-              onTap: (like) async {
+              onTap: (like, count) async {
                 log('${DateTime.now()} start ${like ? '❤️' : '👎'}...');
                 await Future.delayed(const Duration(seconds: 3));
                 log('${DateTime.now()} end ${like ? '❤️' : '👎'}...');
@@ -32,7 +32,7 @@ class DebounceButtonPage extends StatelessWidget {
               initialState: true,
               initialCount: 1,
               counterPosition: LikeCounterPosition.right,
-              likeBuilder: (isLiked) => Assets.icons.heart
+              likeBuilder: (isLiked, _) => Assets.icons.heart
                   .svg(color: isLiked ? Colors.pink : Colors.grey),
               counterBuilder: (count, isLiked) => Padding(
                 padding: const EdgeInsets.all(8),
