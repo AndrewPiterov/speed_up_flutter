@@ -24,6 +24,7 @@ class LikeToggleButtonState extends Equatable {
   ///
   const LikeToggleButtonState({
     required this.action,
+    required this.count,
     this.ignoreReason,
   });
 
@@ -35,6 +36,9 @@ class LikeToggleButtonState extends Equatable {
 
   ///
   final bool action;
+
+  ///
+  final int count;
 
   @override
   List<Object?> get props => [ignore, action];
@@ -64,10 +68,10 @@ class LikeToggleButton extends StatefulWidget {
   final bool initialState;
 
   ///
-  final Widget Function(bool liked) likeBuilder;
+  final Widget Function(bool isLiked, int count) likeBuilder;
 
   ///
-  final Function(bool yes) onTap;
+  final Function(bool isLiked) onTap;
 
   ///
   final int? initialCount;
@@ -104,6 +108,7 @@ class _LikeToggleButtonState extends State<LikeToggleButton> {
                 ? 'no changes'
                 : null,
         action: lastAction,
+        count: _getNewCount(lastAction),
       );
 
       widget.onChange?.call(state);
@@ -161,28 +166,32 @@ class _LikeToggleButtonState extends State<LikeToggleButton> {
             return widget.counterBuilder!
                 .call(widget.initialCount!, widget.initialState);
           }
-          var count = -9999;
-          final initCount = widget.initialCount!;
-          if (widget.initialState) {
-            if (!snap.data!) {
-              count = initCount - 1;
-            } else {
-              count = initCount;
-            }
-          } else {
-            if (!snap.data!) {
-              count = initCount;
-            } else {
-              count = initCount + 1;
-            }
-          }
-
-          return widget.counterBuilder!.call(count, snap.data!);
+          final newCount = _getNewCount(snap.data!);
+          return widget.counterBuilder!.call(newCount, snap.data!);
         },
       );
     }
 
     return const SizedBox.shrink();
+  }
+
+  int _getNewCount(bool isLiked) {
+    var count = -9999;
+    final initCount = widget.initialCount!;
+    if (widget.initialState) {
+      if (!isLiked) {
+        count = initCount - 1;
+      } else {
+        count = initCount;
+      }
+    } else {
+      if (!isLiked) {
+        count = initCount;
+      } else {
+        count = initCount + 1;
+      }
+    }
+    return count;
   }
 
   GestureDetector _likeIcon() {
@@ -192,7 +201,11 @@ class _LikeToggleButtonState extends State<LikeToggleButton> {
         stream: _lastActionSubject,
         builder: (_, snap) {
           final liked = !snap.hasData ? widget.initialState : snap.data!;
-          return widget.likeBuilder(liked);
+          final newCount = _getNewCount(snap.data!);
+          return widget.likeBuilder(
+            liked,
+            newCount,
+          );
         },
       ),
     );
