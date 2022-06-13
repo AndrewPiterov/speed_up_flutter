@@ -200,12 +200,9 @@ class _LikeToggleButtonState extends State<LikeToggleButton> {
       child: StreamBuilder<bool>(
         stream: _lastActionSubject,
         builder: (_, snap) {
-          final liked = !snap.hasData ? widget.initialState : snap.data!;
-          final newCount = _getNewCount(snap.data!);
-          return widget.likeBuilder(
-            liked,
-            newCount,
-          );
+          final isLiked = !snap.hasData ? widget.initialState : snap.data!;
+          final newCount = _getNewCount(isLiked);
+          return widget.likeBuilder(isLiked, newCount);
         },
       ),
     );

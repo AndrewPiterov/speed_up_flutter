@@ -1,3 +1,7 @@
+## 0.8.4
+
+* [Fix] Like Button
+
 ## 0.8.3
 
 * [Fix] callbacks of Like Button
