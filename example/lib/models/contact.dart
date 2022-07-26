@@ -1,6 +1,8 @@
 import 'package:speed_up/speed_up.dart';
 
+///
 class ContactModel {
+  ///
   ContactModel(this.name, this.phone);
 
   final String name;

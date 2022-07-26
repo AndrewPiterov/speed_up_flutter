@@ -1,3 +1,8 @@
+## 0.8.5
+
+* [Add] `ColorHex` extension
+* [Update] dependencies
+
 ## 0.8.4
 
 * [Fix] Like Button

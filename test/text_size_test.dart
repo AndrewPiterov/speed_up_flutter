@@ -42,7 +42,6 @@ void main() {
     final textSize = getTextSize(
       title,
       headerTextStyle,
-      maxLine: 1,
     );
 
     final textSize2 = getTextSize(
@@ -51,8 +50,8 @@ void main() {
       maxLine: 2,
     );
 
-    log('One line header: ' + textSize.toString());
-    log('Two lines header: ' + textSize2.toString());
+    log('One line header: $textSize');
+    log('Two lines header: $textSize2');
 
     expect(true, textSize.width == textSize2.width);
     expect(true, textSize.height < textSize2.height);

@@ -204,13 +204,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.1"
-  fluent_result:
-    dependency: transitive
-    description:
-      name: fluent_result
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "5.0.0"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -423,7 +416,7 @@ packages:
       name: rxdart
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.27.4"
+    version: "0.27.5"
   shelf:
     dependency: transitive
     description:
@@ -456,14 +449,14 @@ packages:
       name: speed_up
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.8.0+1"
+    version: "0.8.3"
   speed_up_flutter:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.8.4"
+    version: "0.8.5"
   stack_trace:
     dependency: transitive
     description:

@@ -3,7 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:speed_up_flutter/speed_up_flutter.dart';
 
-const _text = """What is Lorem Ipsum?\nLorem Ipsum is simply dummy 
+const _text = '''
+What is Lorem Ipsum?\nLorem Ipsum is simply dummy 
     text of the printing and typesetting industry.
     Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
     when an unknown printer took a galley
@@ -13,7 +14,7 @@ const _text = """What is Lorem Ipsum?\nLorem Ipsum is simply dummy
     It was popularised in the 1960s with the release of 
     Letraset sheets containing Lorem Ipsum passages, 
     and more recently with desktop publishing software like Aldus 
-    PageMaker including versions of Lorem Ipsum""";
+    PageMaker including versions of Lorem Ipsum''';
 
 class ReadMorePage extends StatefulWidget {
   const ReadMorePage({Key? key}) : super(key: key);
