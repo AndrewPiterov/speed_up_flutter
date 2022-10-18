@@ -1,4 +1,4 @@
-import 'package:example/pages/debounce_button_page.dart';
+import 'package:example/pages/multi_tap_button.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home:
-          const DebounceButtonPage(), // ReadMore(),  const MyHomePage(title: 'Flutter Demo Home Page'),
+          const MultiTapButtonPage(), // DebounceButtonPage(), // ReadMore(),  const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }

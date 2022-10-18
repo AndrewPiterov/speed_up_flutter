@@ -1,3 +1,7 @@
+## 0.8.6
+
+* [Add] MultiTap Button
+
 ## 0.8.5
 
 * [Add] `ColorHex` extension
