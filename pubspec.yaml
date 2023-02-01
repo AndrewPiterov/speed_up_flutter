@@ -1,6 +1,6 @@
 name: speed_up_flutter
 description: This package will speed up your developing.
-version: 0.8.6
+version: 0.8.7
 homepage: https://github.com/AndrewPiterov/speed_up_flutter
 
 environment:
@@ -13,14 +13,14 @@ dependencies:
     sdk: flutter
 
   rxdart: ^0.27.5
-  speed_up: ^0.8.8
+  speed_up: ^0.8.9
 
 dev_dependencies:
   flutter_lints: ^2.0.1
   flutter_test:
     sdk: flutter
   given_when_then_unit_test: ^0.1.0
-  lint: ^1.10.0
+  lint: ^2.0.1
   shouldly: ^0.5.0+1
   
 flutter:

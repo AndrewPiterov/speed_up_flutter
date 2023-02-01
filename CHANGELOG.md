@@ -1,3 +1,7 @@
+## 0.8.7
+
+* [Add] `Nothing` View
+
 ## 0.8.6
 
 * [Add] MultiTap Button
