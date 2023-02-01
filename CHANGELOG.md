@@ -1,3 +1,7 @@
+## 0.8.8
+
+* [Fix] exporting `Nothing` View
+
 ## 0.8.7
 
 * [Add] `Nothing` View
