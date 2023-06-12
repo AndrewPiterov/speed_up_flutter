@@ -1,7 +1,10 @@
+import 'package:example/pages/contact_list_page.dart';
 import 'package:example/pages/multi_tap_button.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -10,7 +13,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home:
-          const MultiTapButtonPage(), // DebounceButtonPage(), // ReadMore(),  const MyHomePage(title: 'Flutter Demo Home Page'),
+          const ContactListPage(), // DebounceButtonPage(), // ReadMore(),  const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
