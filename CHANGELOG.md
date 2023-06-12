@@ -1,3 +1,7 @@
+## 0.8.9
+
+* [Add] constant H & W
+
 ## 0.8.8
 
 * [Fix] exporting `Nothing` View
