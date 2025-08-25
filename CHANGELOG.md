@@ -1,3 +1,9 @@
+## 0.10.0
+
+* upgrade sdk to '>=3.8.0 <4.0.0'
+* upgrade flutter to '>=3.32.0 <4.0.0'
+* upgrade rxdart to ^0.28.0
+
 ## 0.9.0
 
 * upgrade sdk to '>=2.14.0 <4.0.0'

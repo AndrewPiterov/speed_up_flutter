@@ -10,9 +10,9 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^1.1.0
-  speed_up: ^0.8.0+1
+  speed_up: ^0.9.0
   speed_up_flutter:
-      path: ../
+    path: ../
 
 dev_dependencies:
   build_runner: ^2.1.11  
